@@ -14,10 +14,6 @@ const Index = () => {
     Alert.alert("Modal closed", "You closed the modal!"); 
   };
 
-  const showAlert = () => {
-    Alert.alert("Alert", "Button pressed!");
-  };
-
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <ImageBackground 
@@ -37,7 +33,6 @@ const Index = () => {
           <TouchableOpacity style={styles.button} onPress={openModal}>
             <Text>Show Modal</Text>
           </TouchableOpacity>
-
           
           <Modal animationType="slide" transparent={true} visible={modalVisible} onRequestClose={closeModal}>
             <View style={styles.modalBackground}>
